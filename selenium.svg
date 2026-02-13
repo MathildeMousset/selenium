@@ -154,10 +154,12 @@
     <!-- layer-taps -->
     <g class="leftThumb" id="leftThumb-lt">
       <g class="tucked thumb">
-        <g class="specialKey">
-          <rect class="colorMod"/>
-          <text class="level0 colorMod">shift</text>
-          <use  class="layerNav" href="#glyph_caps"/>
+        <g class="key">
+          <rect/>
+          <rect class="colorMod sticky"/>
+          <text class="colorMod sticky pc">shift</text>
+          <use  class="layerVim" href="#glyph_caps"/>
+          <text class="layerSym shortcut">num</text>
         </g>
         <g class="comfy thumb">
           <g class="key">
@@ -166,6 +168,7 @@
             <text class="level1  colorMod pc">ctrl</text>
             <use  class="level2"   href="#glyph_backspace"/>
             <use  class="layerNav" href="#glyph_delete"/>
+            <use  class="layerSym" href="#glyph_space"/>
           </g>
           <g class="reachy thumb">
             <g class="key showFun">
@@ -174,6 +177,7 @@
               <text class="level1  colorMod pc">os</text>
               <use  class="level2"   href="#glyph_tab"/>
               <use  class="layerNav" href="#glyph_btab"/>
+              <use  class="layerSym" href="#glyph_return"/>
             </g>
           </g>
         </g>
@@ -181,16 +185,17 @@
     </g>
     <g class="rightThumb" id="rightThumb-lt">
       <g class="tucked thumb">
-        <g class="specialKey showSym">
-          <rect class="colorSym"/>
-          <text class="level0 colorSym">sym</text>
+        <g class="key showSym">
+          <rect/>
+          <rect class="colorSym sticky"/>
+          <text class="colorSym sticky pc">sym</text>
           <text class="layerNav shortcut">altgr</text>
         </g>
         <g class="comfy thumb">
           <g class="key">
             <rect/>
-            <rect class="dualKey colorNav"/>
-            <text class="level1  colorNav pc">nav</text>
+            <rect class="dualKey borderNav tap-pref"/>
+            <text class="level1  borderNav pc">nav</text>
             <use  class="level2" href="#glyph_space"/>
             <text class="layerNav pc">fun</text>
           </g>
@@ -200,7 +205,6 @@
               <rect class="dualKey colorMod"/>
               <text class="level1  colorMod pc">alt</text>
               <use  class="level2"   href="#glyph_return"/>
-              <use  class="layerNav" href="#glyph_escape"/>
             </g>
           </g>
         </g>
@@ -210,10 +214,12 @@
     <!-- homerow-mods -->
     <g class="leftThumb" id="leftThumb-hrm">
       <g class="tucked thumb">
-        <g class="specialKey">
-          <rect class="colorMod"/>
-          <text class="level0 colorMod">shift</text>
+        <g class="key">
+          <rect/>
+          <rect class="colorMod sticky"/>
+          <text class="colorMod sticky pc">shift</text>
           <use  class="layerNav" href="#glyph_caps"/>
+          <text class="layerSym shortcut">num</text>
         </g>
         <g class="comfy thumb">
           <g class="key showNav">
@@ -222,6 +228,7 @@
             <text class="level1  colorNav pc">nav</text>
             <use  class="level2"   href="#glyph_backspace"/>
             <use  class="layerNav" href="#glyph_delete"/>
+            <use  class="layerSym" href="#glyph_space"/>
           </g>
           <g class="reachy thumb">
             <g class="key showFun">
@@ -230,6 +237,7 @@
               <text class="level1  colorFun pc">fun</text>
               <use  class="level2"   href="#glyph_tab"/>
               <use  class="layerNav" href="#glyph_btab"/>
+              <use  class="layerSym" href="#glyph_return"/>
             </g>
           </g>
         </g>
@@ -237,16 +245,17 @@
     </g>
     <g class="rightThumb" id="rightThumb-hrm">
       <g class="tucked thumb">
-        <g class="specialKey showSym">
-          <rect class="colorSym"/>
-          <text class="level0 colorSym">sym</text>
+        <g class="key showSym">
+          <rect/>
+          <rect class="colorSym sticky"/>
+          <text class="colorSym sticky pc">sym</text>
           <text class="layerNav shortcut">altgr</text>
         </g>
         <g class="comfy thumb">
           <g class="key toggleNavFun">
             <rect/>
-            <rect class="dualKey colorNav"/>
-            <text class="level1  colorNav pc">nav</text>
+            <rect class="dualKey borderNav tap-pref"/>
+            <text class="level1  borderNav pc">nav</text>
             <use  class="level2" href="#glyph_space"/>
             <text class="layerNav pc">fun</text>
           </g>
@@ -256,7 +265,6 @@
               <rect class="dualKey colorFun"/>
               <text class="level1  colorFun pc">fun</text>
               <use  class="level2"   href="#glyph_return"/>
-              <use  class="layerNav" href="#glyph_escape"/>
             </g>
           </g>
         </g>
@@ -266,10 +274,12 @@
     <!-- Vim-fu -->
     <g class="leftThumb" id="leftThumb-vim">
       <g class="tucked thumb">
-        <g class="specialKey">
-          <rect class="colorMod"/>
-          <text class="level0 colorMod">shift</text>
+        <g class="key">
+          <rect/>
+          <rect class="colorMod sticky"/>
+          <text class="colorMod sticky pc">shift</text>
           <use  class="layerVim" href="#glyph_caps"/>
+          <text class="layerSym shortcut">num</text>
         </g>
         <g class="comfy thumb">
           <g class="key showNav">
@@ -278,13 +288,15 @@
             <text class="level1  colorNav pc">nav</text>
             <use  class="level2"   href="#glyph_backspace"/>
             <use  class="layerVim" href="#glyph_delete"/>
+            <use  class="layerSym" href="#glyph_space"/>
           </g>
           <g class="reachy thumb">
-            <g class="specialKey showNum">
+            <g class="key showNum">
               <rect/>
               <rect class="dualKey colorNum"/>
-              <text class="level1  colorNum">num</text>
-              <use  class="level2" href="#glyph_escape"/>
+              <text class="level1  colorNum pc">num</text>
+              <use  class="level2"   href="#glyph_escape"/>
+              <use  class="layerSym" href="#glyph_return"/>
             </g>
           </g>
         </g>
@@ -292,24 +304,25 @@
     </g>
     <g class="rightThumb" id="rightThumb-vim">
       <g class="tucked thumb">
-        <g class="specialKey showSym">
-          <rect class="colorSym"/>
-          <text class="level0 colorSym">sym</text>
-          <text class="layerVim pc">altgr</text>
+        <g class="key showSym">
+          <rect/>
+          <rect class="colorSym sticky"/>
+          <text class="colorSym sticky pc">sym</text>
+          <text class="layerVim shortcut">altgr</text>
         </g>
         <g class="comfy thumb">
           <g class="key toggleNavFun">
             <rect/>
-            <rect class="dualKey colorNav"/>
-            <text class="level1  colorNav pc">nav</text>
+            <rect class="dualKey borderNav tap-pref"/>
+            <text class="level1  borderNav pc">nav</text>
             <use  class="level2" href="#glyph_space"/>
             <text class="layerVim pc">fun</text>
           </g>
           <g class="reachy thumb">
-            <g class="specialKey showNum">
+            <g class="key showNum">
               <rect/>
               <rect class="dualKey colorNum"/>
-              <text class="level1  colorNum">num</text>
+              <text class="level1  colorNum pc">num</text>
               <use  class="level2" href="#glyph_return"/>
             </g>
           </g>
@@ -350,7 +363,7 @@
             <text class="level2">Q</text>
             <text class="layerSym">^</text>
             <text class="layerNum">€</text>
-            <text class="layerNav"></text>
+            <use  class="layerNav" href="#glyph_escape"/>
             <text class="layerVim"></text>
             <text class="layerFun pc">F1</text>
           </g>
@@ -387,9 +400,9 @@
             </g>
             <g class="key home dual">
               <rect/>
-              <rect class="dualKey colorMod"/>
-              <text class="level1  colorMod mac">⌥</text>
-              <text class="level1  colorMod pc">os</text>
+              <rect class="dualKey borderMod tap-pref"/>
+              <text class="level1  borderMod mac">⌥</text>
+              <text class="level1  borderMod pc">os</text>
               <text class="level2">S</text>
               <text class="layerSym">(</text>
               <text class="layerNum">2</text>
@@ -421,9 +434,9 @@
               </g>
               <g class="key home dual">
                 <rect/>
-                <rect class="dualKey colorMod"/>
-                <text class="level1  colorMod mac">⌘</text>
-                <text class="level1  colorMod pc">ctrl</text>
+                <rect class="dualKey borderMod tap-pref"/>
+                <text class="level1  borderMod mac">⌘</text>
+                <text class="level1  borderMod pc">ctrl</text>
                 <text class="level2">E</text>
                 <text class="layerSym">)</text>
                 <text class="layerNum">3</text>
@@ -456,9 +469,9 @@
                 </g>
                 <g class="key home dual">
                   <rect/>
-                  <rect class="dualKey colorMod"/>
-                  <text class="level1  colorMod mac">⌃</text>
-                  <text class="level1  colorMod pc">alt</text>
+                  <rect class="dualKey borderMod tap-pref"/>
+                  <text class="level1  borderMod mac">⌃</text>
+                  <text class="level1  borderMod pc">alt</text>
                   <text class="level2">N</text>
                   <text class="layerSym">}</text>
                   <text class="layerNum">4</text>
@@ -583,9 +596,9 @@
             </g>
             <g class="key home dual">
               <rect/>
-              <rect class="dualKey colorMod"/>
-              <text class="level1  colorMod mac">⌥</text>
-              <text class="level1  colorMod pc">os</text>
+              <rect class="dualKey borderMod tap-pref"/>
+              <text class="level1  borderMod mac">⌥</text>
+              <text class="level1  borderMod pc">os</text>
               <text class="level2">I</text>
               <text class="layerSym">/</text>
               <text class="layerNum">9</text>
@@ -618,9 +631,9 @@
               </g>
               <g class="key home dual">
                 <rect/>
-                <rect class="dualKey colorMod"/>
-                <text class="level1  colorMod mac">⌘</text>
-                <text class="level1  colorMod pc">ctrl</text>
+                <rect class="dualKey borderMod tap-pref"/>
+                <text class="level1  borderMod mac">⌘</text>
+                <text class="level1  borderMod pc">ctrl</text>
                 <text class="level2">T</text>
                 <text class="layerSym">-</text>
                 <text class="layerNum">8</text>
@@ -652,9 +665,9 @@
                 </g>
                 <g class="key home dual">
                   <rect/>
-                  <rect class="dualKey colorMod"/>
-                  <text class="level1  colorMod mac">⌃</text>
-                  <text class="level1  colorMod pc">alt</text>
+                  <rect class="dualKey borderMod tap-pref"/>
+                  <text class="level1  borderMod mac">⌃</text>
+                  <text class="level1  borderMod pc">alt</text>
                   <text class="level2">R</text>
                   <text class="layerSym">+</text>
                   <text class="layerNum">7</text>

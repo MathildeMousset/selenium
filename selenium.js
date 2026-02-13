@@ -22,12 +22,34 @@ const keyboards = {
     columns: [ "extra", "outer", "pinky", "ring", "middle", "index", "inner", "tmx" ],
     thumbs: [ "tucked3", "tucked2", "tucked1", "comfy", "reachy" ],
     rows: [ "num", "top", "home", "bottom" ],
-    col_stagger: [ 0, 0, 0, 0.5, 0, 0, 0, 0.5],
+    col_stagger: [ 0, 0, 0.5, 0, 0, 0, 0, 0.5],
     col_splay:   [ 0, 0, 0, 0, 0, 0, 0, 0 ],
     thumb_stagger: [ -1, 0, 0, 0, 0 ],
     thumb_spread:  [ -2, 0, 0, 0, 0 ],
-    thumb_splay:   [ 0,0,  0, 16, 16 ],
-    view_box: "-22 -12 1030 380",
+    thumb_splay:   [ 0, 0,  15, 15, 15 ],
+    view_box: "45 -12 970 340",
+  },
+  qmx_natural: {
+    columns: [ "extra", "outer", "pinky", "ring", "middle", "index", "inner", "tmx" ],
+    thumbs: [ "tucked3", "tucked2", "tucked1", "comfy", "reachy" ],
+    rows: [ "num", "top", "home", "bottom" ],
+    col_stagger: [ 0, 0, 0.5, 0, 0, 0, 0, 0.5],
+    col_splay:   [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+    thumb_stagger: [ -1, 0, 0, 0, 0 ],
+    thumb_spread:  [ -2.3, 0.05, 0, 0, 0 ],
+    thumb_splay:   [ 0, 0,  15, 15, 15 ],
+    view_box: "45 -12 940 340",
+  },
+  qmx_straight: {
+    columns: [ "extra", "outer", "pinky", "ring", "middle", "index", "inner", "tmx" ],
+    thumbs: [ "tucked3", "tucked2", "tucked1", "comfy", "reachy" ],
+    rows: [ "num", "top", "home", "bottom" ],
+    col_stagger: [ 0, 0, 0.5, 0, 0, 0, 0, 0.5],
+    col_splay:   [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+    thumb_stagger: [ -1, 0, 0, 0, 0 ],
+    thumb_spread:  [ -2.5, 0, 0, 0, 0 ],
+    thumb_splay:   [ 0, 0,  0, 0, 0 ],
+    view_box: "45 -12 970 340",
   },
   ortho: {
     thumb_spread: [ -0.5, 0, 0 ],
@@ -170,6 +192,9 @@ const drawKeys = () => {
     rect.setAttribute("width",  ikw);
     rect.setAttribute("height", ikh);
   });
+  document.querySelectorAll("rect.sticky").forEach(rect => {
+    rect.setAttribute("width",  ikw / 2);
+  });
   document.querySelectorAll("rect.dualKey").forEach(rect => {
     rect.setAttribute("y", padding + ikh / 2);
     rect.setAttribute("width",  ikw / 2);
@@ -187,9 +212,9 @@ const drawLabels = () => {
   const x2 = kw * 0.75;
 
   // const y0 = kh * 0.58;
-  const y0 = kh * 0.50;
+  const y0 = kh * 0.58;
   const y1 = kh * 0.80;
-  const y2 = kh * 0.37;
+  const y2 = kh * 0.32;
 
   document.querySelectorAll(".level0").forEach(text => {
     text.setAttribute("x", x0);
@@ -213,5 +238,9 @@ const drawLabels = () => {
   });
   document.querySelectorAll(".specialKey .level1, .specialKey .level2").forEach(text => {
     text.setAttribute("x", x0);
+  });
+  document.querySelectorAll("text.sticky").forEach(text => {
+    text.setAttribute("x", -kh / 2);
+    text.setAttribute("y", 20);
   });
 };
