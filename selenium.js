@@ -25,31 +25,9 @@ const keyboards = {
     col_stagger: [ 0, 0, 0.5, 0, 0, 0, 0, 0.5],
     col_splay:   [ 0, 0, 0, 0, 0, 0, 0, 0 ],
     thumb_stagger: [ -1, 0, 0, 0, 0 ],
-    thumb_spread:  [ -2, 0, 0, 0, 0 ],
-    thumb_splay:   [ 0, 0,  15, 15, 15 ],
-    view_box: "45 -12 970 340",
-  },
-  qmx_natural: {
-    columns: [ "extra", "outer", "pinky", "ring", "middle", "index", "inner", "tmx" ],
-    thumbs: [ "tucked3", "tucked2", "tucked1", "comfy", "reachy" ],
-    rows: [ "num", "top", "home", "bottom" ],
-    col_stagger: [ 0, 0, 0.5, 0, 0, 0, 0, 0.5],
-    col_splay:   [ 0, 0, 0, 0, 0, 0, 0, 0 ],
-    thumb_stagger: [ -1, 0, 0, 0, 0 ],
     thumb_spread:  [ -2.3, 0.05, 0, 0, 0 ],
     thumb_splay:   [ 0, 0,  15, 15, 15 ],
     view_box: "45 -12 940 340",
-  },
-  qmx_straight: {
-    columns: [ "extra", "outer", "pinky", "ring", "middle", "index", "inner", "tmx" ],
-    thumbs: [ "tucked3", "tucked2", "tucked1", "comfy", "reachy" ],
-    rows: [ "num", "top", "home", "bottom" ],
-    col_stagger: [ 0, 0, 0.5, 0, 0, 0, 0, 0.5],
-    col_splay:   [ 0, 0, 0, 0, 0, 0, 0, 0 ],
-    thumb_stagger: [ -1, 0, 0, 0, 0 ],
-    thumb_spread:  [ -2.5, 0, 0, 0, 0 ],
-    thumb_splay:   [ 0, 0,  0, 0, 0 ],
-    view_box: "45 -12 970 340",
   },
   ortho: {
     thumb_spread: [ -0.5, 0, 0 ],
@@ -244,3 +222,30 @@ const drawLabels = () => {
     text.setAttribute("y", 20);
   });
 };
+
+const setChar = (element, level, char) => {
+  const text = element?.querySelector(`[class="level${level}"]`);
+  if (!text) {
+    return;
+  }
+  if (char.length === 1) {
+    text.textContent = char;
+  }
+  else if (char === "**") {
+    text.textContent = "★";
+  }
+  else {
+    text.textContent = char[1];
+  }
+}
+async function setLayout(name) {
+  const response = await fetch(`layouts/${name}.json`);
+  const result   = await response.json();
+  for (const id in result.keymap) {
+    const chars = result.keymap[id];
+    const key = document.getElementById(id);
+    setChar(key, 2, chars[1]);
+    setChar(key, 1, chars[0].toUpperCase() !== chars[1]
+                  ? chars[0] : "");
+  }
+}

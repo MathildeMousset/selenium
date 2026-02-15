@@ -152,7 +152,7 @@
     </g>
 
     <!-- layer-taps -->
-    <g class="leftThumb" id="leftThumb-lt">
+    <g class="leftThumb" id="leftThumb-tt">
       <g class="tucked thumb">
         <g class="key">
           <rect/>
@@ -183,7 +183,7 @@
         </g>
       </g>
     </g>
-    <g class="rightThumb" id="rightThumb-lt">
+    <g class="rightThumb" id="rightThumb-tt">
       <g class="tucked thumb">
         <g class="key showSym">
           <rect/>
@@ -358,8 +358,9 @@
           <g class="key home"/>
         </g>
         <g class="col5">
-          <g class="key top">
+          <g id="KeyQ" class="key top">
             <rect/>
+            <text class="level1"></text>
             <text class="level2">Q</text>
             <text class="layerSym">^</text>
             <text class="layerNum">€</text>
@@ -367,8 +368,9 @@
             <text class="layerVim"></text>
             <text class="layerFun pc">F1</text>
           </g>
-          <g class="key home">
+          <g id="KeyA" class="key home">
             <rect/>
+            <text class="level1"></text>
             <text class="level2">A</text>
             <text class="layerSym">{</text>
             <text class="layerNum">1</text>
@@ -376,8 +378,9 @@
             <text class="layerVim shortcut">all</text>
             <text class="layerFun pc">F5</text>
           </g>
-          <g class="key bottom">
+          <g id="KeyZ" class="key bottom">
             <rect/>
+            <text class="level1"></text>
             <text class="level2">Z</text>
             <text class="layerSym">~</text>
             <text class="layerNum"></text>
@@ -389,8 +392,9 @@
 
         <g class="ring matrix">
           <g class="col4">
-            <g class="key top">
+            <g id="KeyW" class="key top">
               <rect/>
+              <text class="level1"></text>
               <text class="level2">C</text>
               <text class="layerSym">&lt;</text>
               <text class="layerNum">«</text>
@@ -398,7 +402,7 @@
               <text class="layerVim shortcut">close</text>
               <text class="layerFun pc">F2</text>
             </g>
-            <g class="key home dual">
+            <g id="KeyS" class="key home dual">
               <rect/>
               <rect class="holdTap borderMod tap-pref"/>
               <text class="level1  borderMod mac">⌥</text>
@@ -410,8 +414,9 @@
               <text class="layerVim shortcut">save</text>
               <text class="layerFun pc">F6</text>
             </g>
-            <g class="key bottom">
+            <g id="KeyX" class="key bottom">
               <rect/>
+              <text class="level1"></text>
               <text class="level2">X</text>
               <text class="layerSym">[</text>
               <text class="layerNum"></text>
@@ -423,8 +428,9 @@
 
           <g class="middle matrix">
             <g class="col3">
-              <g class="key top">
+              <g id="KeyE" class="key top">
                 <rect/>
+                <text class="level1"></text>
                 <text class="level2">O</text>
                 <text class="layerSym">&gt;</text>
                 <text class="layerNum">»</text>
@@ -432,7 +438,7 @@
                 <use  class="layerVim" href="#glyph_prev"/>
                 <text class="layerFun pc">F3</text>
               </g>
-              <g class="key home dual">
+              <g id="KeyD" class="key home dual">
                 <rect/>
                 <rect class="holdTap borderMod tap-pref"/>
                 <text class="level1  borderMod mac">⌘</text>
@@ -444,7 +450,7 @@
                 <use  class="layerVim" href="#glyph_btab"/>
                 <text class="layerFun pc">F7</text>
               </g>
-              <g class="key bottom">
+              <g id="KeyC" class="key bottom">
                 <rect/>
                 <text class="level1">-</text>
                 <text class="level2">?</text>
@@ -458,8 +464,9 @@
 
             <g class="index matrix">
               <g class="col2">
-                <g class="key top">
+                <g id="KeyR" class="key top">
                   <rect/>
+                  <text class="level1"></text>
                   <text class="level2">P</text>
                   <text class="layerSym">$</text>
                   <text class="layerNum">$</text>
@@ -467,7 +474,7 @@
                   <use  class="layerVim" href="#glyph_next"/>
                   <text class="layerFun pc">F4</text>
                 </g>
-                <g class="key home dual">
+                <g id="KeyF" class="key home dual">
                   <rect/>
                   <rect class="holdTap borderMod tap-pref"/>
                   <text class="level1  borderMod mac">⌃</text>
@@ -479,8 +486,9 @@
                   <use  class="layerVim" href="#glyph_tab"/>
                   <text class="layerFun pc">F8</text>
                 </g>
-                <g class="key bottom">
+                <g id="KeyV" class="key bottom">
                   <rect/>
+                  <text class="level1"></text>
                   <text class="level2">V</text>
                   <text class="layerSym">_</text>
                   <text class="layerNum"></text>
@@ -494,24 +502,27 @@
 
               <g class="inner matrix">
                 <g class="col1">
-                  <g class="key top">
+                  <g id="KeyT" class="key top">
                     <rect/>
+                    <text class="level1"></text>
                     <text class="level2">W</text>
                     <text class="layerSym">%</text>
                     <text class="layerNum">%</text>
                     <use  class="layerNav" href="#glyph_pgup"/>
                     <text class="layerVim"></text>
                   </g>
-                  <g class="key home">
+                  <g id="KeyG" class="key home">
                     <rect/>
+                    <text class="level1"></text>
                     <text class="level2">F</text>
                     <text class="layerSym"> = </text>
                     <text class="layerNum">5</text>
                     <use  class="layerNav" href="#glyph_pgdown"/>
                     <text class="layerVim"></text>
                   </g>
-                  <g class="key bottom">
+                  <g id="KeyB" class="key bottom">
                     <rect/>
+                    <text class="level1"></text>
                     <text class="level2">B</text>
                     <text class="layerSym">#</text>
                     <text class="layerNum"></text>
@@ -558,14 +569,16 @@
           <g class="key home"/>
         </g>
         <g class="col5">
-          <g class="key top">
+          <g id="KeyP" class="key top">
             <rect/>
+            <text class="level1"></text>
             <text class="level2">Y</text>
             <text class="layerSym">`</text>
             <text class="layerNum">@</text>
           </g>
-          <g class="key home">
+          <g id="Semicolon" class="key home">
             <rect/>
+            <text class="level1"></text>
             <text class="level2">U</text>
             <text class="layerSym">"</text>
             <text class="layerNum">0</text>
@@ -573,8 +586,9 @@
             <text class="layerVim"></text>
             <text class="layerFun shortcut">prscr</text>
           </g>
-          <g class="key bottom">
+          <g id="Slash" class="key bottom">
             <rect/>
+            <text class="level1"></text>
             <text class="level2">K</text>
             <text class="layerSym">?</text>
             <text class="layerNum">/</text>
@@ -585,7 +599,7 @@
 
         <g class="ring matrix">
           <g class="col4">
-            <g class="key top">
+            <g id="KeyO" class="key top">
               <rect/>
               <text class="level1">★</text>
               <text class="level2">!</text>
@@ -595,7 +609,7 @@
               <use class="layerVim" href="#glyph_end"/>
               <text class="layerFun shortcut">bri+</text>
             </g>
-            <g class="key home dual">
+            <g id="KeyL" class="key home dual">
               <rect/>
               <rect class="holdTap borderMod tap-pref"/>
               <text class="level1  borderMod mac">⌥</text>
@@ -607,7 +621,7 @@
               <use  class="layerVim" href="#glyph_right"/>
               <text class="layerFun shortcut">lock</text>
             </g>
-            <g class="key bottom">
+            <g id="Period" class="key bottom">
               <rect/>
               <text class="level1">,</text>
               <text class="level2">;</text>
@@ -621,8 +635,9 @@
 
           <g class="middle matrix">
             <g class="col3">
-              <g class="key top">
+              <g id="KeyI" class="key top">
                 <rect/>
+                <text class="level1"></text>
                 <text class="level2">D</text>
                 <text class="layerSym">*</text>
                 <text class="layerNum">*</text>
@@ -630,7 +645,7 @@
                 <use  class="layerVim" href="#glyph_pgup"/>
                 <text class="layerFun shortcut">vol+</text>
               </g>
-              <g class="key home dual">
+              <g id="KeyK" class="key home dual">
                 <rect/>
                 <rect class="holdTap borderMod tap-pref"/>
                 <text class="level1  borderMod mac">⌘</text>
@@ -642,8 +657,9 @@
                 <use  class="layerVim" href="#glyph_up"/>
                 <text class="layerFun shortcut">mute</text>
               </g>
-              <g class="key bottom">
+              <g id="Comma" class="key bottom">
                 <rect/>
+                <text class="level1"></text>
                 <text class="level2">G</text>
                 <text class="layerSym">;</text>
                 <text class="layerNum">.</text>
@@ -655,8 +671,9 @@
 
             <g class="index matrix">
               <g class="col2">
-                <g class="key top">
+                <g id="KeyU" class="key top">
                   <rect/>
+                  <text class="level1"></text>
                   <text class="level2">M</text>
                   <text class="layerSym">&amp;</text>
                   <text class="layerNum">&amp;</text>
@@ -664,7 +681,7 @@
                   <use  class="layerVim" href="#glyph_pgdown"/>
                   <text class="layerFun shortcut">prev</text>
                 </g>
-                <g class="key home dual">
+                <g id="KeyJ" class="key home dual">
                   <rect/>
                   <rect class="holdTap borderMod tap-pref"/>
                   <text class="level1  borderMod mac">⌃</text>
@@ -676,8 +693,9 @@
                   <use  class="layerVim" href="#glyph_down"/>
                   <text class="layerFun shortcut">play</text>
                 </g>
-                <g class="key bottom">
+                <g id="KeyM" class="key bottom">
                   <rect/>
+                  <text class="level1"></text>
                   <text class="level2">H</text>
                   <text class="layerSym">!</text>
                   <text class="layerNum">,</text>
@@ -691,7 +709,7 @@
 
               <g class="inner matrix">
                 <g class="col1">
-                  <g class="key top">
+                  <g id="KeyY" class="key top">
                     <rect/>
                     <text class="level2">J</text>
                     <text class="layerSym">@</text>
@@ -699,15 +717,16 @@
                     <text class="layerNav">/</text>
                     <use  class="layerVim" href="#glyph_home"/>
                   </g>
-                  <g class="key home">
+                  <g id="KeyH" class="key home">
                     <rect/>
+                    <text class="level1"></text>
                     <text class="level2">L</text>
                     <text class="layerSym">\</text>
                     <text class="layerNum">6</text>
                     <text class="layerNav">-</text>
                     <use  class="layerVim" href="#glyph_left"/>
                   </g>
-                  <g class="key bottom">
+                  <g id="KeyN" class="key bottom">
                     <rect/>
                     <text class="level1">.</text>
                     <text class="level2">:</text>
@@ -731,13 +750,14 @@
 
   <g id="select">
     <text y="10" id="ez">EZ : no dual keys</text>
-    <text y="25" id="lt">LT : layer-taps</text>
+    <text y="25" id="tt">TT : thumb-taps</text>
     <text y="40" id="hrm">HRM : homerow-mods</text>
     <text y="55" id="vim">Vim : homerow-mods + VimNav</text>
   </g>
 
   <script xmlns="http://www.w3.org/1999/xhtml" src="selenium.js" type="text/javascript"/>
   <script type="text/javascript"><![CDATA[
+    setLayout("qwerty");
     setGeometry("ortho");
     setConfig("hrm");
     drawKeys();

@@ -110,7 +110,7 @@ use.layerVim {
 [layer4="sym"] .layerSym { display: block; }
 [layer4="num"] .layerNum { display: block; }
 
-.lt .holdTap, .lt .borderMod,
+.tt .holdTap, .tt .borderMod,
 .ez .holdTap, .ez .borderMod { display: none; }
 
 /* Selenium currently forces HRM in the 'Media' half-layer */
