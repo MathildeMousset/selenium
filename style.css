@@ -4,17 +4,24 @@
 
 body {
   width: 99%;
+  margin: 0 auto;
   font-family: sans-serif;
   font-size: 1em;
 }
 
-form p {
-  /* text-align: center; */
-}
-object {
-  width: 100%;
-}
-
 header {
   text-align: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 1em;
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+
+object {
+  width: 100%;
 }
