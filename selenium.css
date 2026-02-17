@@ -25,6 +25,11 @@
 .ortho #right { transform: translate(870px, 0px); }
 .ortho .col6 { display: none; }
 
+/* Generic layer view */
+.none #right { transform: translate(810px, 0px); }
+.none .col6,
+.none .thumbCluster { display: none !important; }
+
 .board {
   fill:   rgba(130, 156, 175, 0.40);
   stroke: rgba(130, 156, 175, 0.10);

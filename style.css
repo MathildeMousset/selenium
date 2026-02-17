@@ -85,10 +85,6 @@ form div {
   justify-content: space-between;
 }
 
-object {
-  width: 100%;
-}
-
 html {
   height: 100%;
   width:  100%;
@@ -158,6 +154,10 @@ a[href]:hover {
  * │                          Keys & Chars                         │
  * ╰───────────────────────────────────────────────────────────────╯
 **/
+
+object { /* keymap */
+  width: 100%;
+}
 
 table { /* behaviors */
   max-width: 42em;

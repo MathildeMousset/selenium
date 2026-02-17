@@ -14,18 +14,18 @@
         variant for split keyboards.</p>
       <form>
         <div>
-          <select id="geometry">
+          <select name="geometry">
             <option value="ortho" selected>Ortho</option>
             <option value="flex">Quacken</option>
           </select>
-          <select id="layout">
+          <select name="layout">
             <option>QWERTY</option>
             <option>Colemak</option>
             <option>Sturdy</option>
             <option>Ergol</option>
           </select>
         </div>
-        <object type="image/svg+xml" class="odk" data="selenium.svg"></object>
+        <object type="image/svg+xml" data="selenium.svg" class="main"></object>
         <div>
           <p>
             <input type="radio" name="mode" id="mode-ez" value="ez">
@@ -89,7 +89,8 @@
           <td>
             <svg viewBox="0 0 60 57" width="60" height="57">
               <defs>
-                <path class="symbol" transform="scale(0.4) translate(-24, -30)" id="glyph_space"     d="M42,24V32H6V24"/>
+                <path class="symbol" id="glyph_space"
+                  transform="scale(0.4) translate(-24, -30)" d="M42,24V32H6V24"/>
               </defs>
               <g class="key">
                 <rect x="1" y="1" rx="4" ry="4" width="58" height="54.67"/>
@@ -109,7 +110,8 @@
           <td>
             <svg viewBox="0 0 60 57" width="60" height="57">
               <defs>
-                <path class="symbol" transform="scale(0.4) translate(-24, -30)" id="glyph_return"    d="M42,13V27H6 m8-8l-8,8l8,8"/>
+                <path class="symbol" id="glyph_return"
+                  transform="scale(0.4) translate(-24, -30)" d="M42,13V27H6 m8-8l-8,8l8,8"/>
               </defs>
               <g class="key">
                 <rect x="1" y="1" rx="4" ry="4" width="58" height="54.67"/>
@@ -148,19 +150,23 @@
       <h2>Layers</h2>
 
       <h3>Symbols</h3>
+      <object type="image/svg+xml" data="selenium.svg" class="sym"></object>
       <p>The Symbol layer has been fine-tuned to chain common programming symbols.</p>
       <p>It’s also been desinged with Vim in mind, to make advanced navigation tricks more
         comfortable.</p>
 
       <h3>Num/Nav</h3>
+      <object type="image/svg+xml" data="selenium.svg" class="nav"></object>
       TODO
 
       <h3>Fun/Media</h3>
+      <object type="image/svg+xml" data="selenium.svg" class="fun"></object>
       TODO
 
       <h2>Configurable</h2>
 
       <h3>Vim option</h3>
+      <object type="image/svg+xml" data="selenium.svg" class="vim"></object>
       TODO
 
       <h3><kbd>Space</kbd>/<kbd>Backspace</kbd> Swap</h3>

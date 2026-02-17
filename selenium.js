@@ -34,6 +34,9 @@ const keyboards = {
     thumb_stagger: [ -0.2, 0, 0 ],
     view_box: "100 -10 730 260",
   },
+  none: {
+    view_box: "100 -10 670 200",
+  },
 };
 
 function setGeometry(name) {
@@ -101,16 +104,16 @@ function setGeometry(name) {
 }
 
 let funState = false;
-const setLayer3 = (id) => {
+function setLayer3(id) {
   document.querySelector("#left").setAttribute("layer3", id);
   document.querySelector("#right").setAttribute("layer3", id);
   funState = (id === "fun");
-};
+}
 
-const setLayer4 = (id) => {
+function setLayer4(id) {
   document.querySelector("#left").setAttribute("layer4", id);
   document.querySelector("#right").setAttribute("layer4", id);
-};
+}
 
 const toggleNavFun = () => {
   setLayer3(funState ? "nav" : "fun");
