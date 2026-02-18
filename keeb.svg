@@ -89,28 +89,8 @@
     </g>
 
     <!-- easy mode + Vim -->
-    <g class="leftThumb"  id="leftThumb-ez-vim">
-      <g class="tucked thumb">
-        <use href="#leftThumb-ez-tucked"/>
-        <g class="comfy thumb">
-          <use href="#leftThumb-ez-comfy"/>
-          <g class="reachy thumb">
-            <use href="#leftThumb-ez-reachy"/>
-          </g>
-        </g>
-      </g>
-    </g>
-    <g class="rightThumb" id="rightThumb-ez-vim">
-      <g class="tucked thumb">
-        <use href="#rightThumb-ez-tucked"/>
-        <g class="comfy thumb">
-          <use href="#rightThumb-ez-comfy"/>
-          <g class="reachy thumb">
-            <use href="#rightThumb-ez-reachy"/>
-          </g>
-        </g>
-      </g>
-    </g>
+    <use class="leftThumb"  id="leftThumb-ez-vim"  href="#leftThumb-ez"/>
+    <use class="rightThumb" id="rightThumb-ez-vim" href="#rightThumb-ez"/>
 
     <!-- thumb-taps -->
     <g id="leftThumb-tt-tucked"  class="key">

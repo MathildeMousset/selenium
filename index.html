@@ -51,27 +51,35 @@
     <main>
       <h2>From 42 to 34 Keys (and beyond)</h2>
       <p>Like Arsenik, Selenium allows a step-by-step approach:</p>
-      <ul>
-        <li><strong>EZ</strong>: no hold-taps.
-          <ul>
-            <li>a beginner-friendly keymap for 42-key keebs</li>
-          </ul>
-        </li>
-        <li><strong>TT</strong>: thumb-taps. This is where it gets comfy:
-          <ul>
-            <li>access the `Nav` layer with a long press on the <kbd>Space</kbd> key</li>
-            <li>do <kbd>Backspace</kbd> and <kbd>Return</kbd> with a quick tap on thumb keys</li>
-          </ul>
-        </li>
-        <li><strong>HRM</strong>: homerow-mods. A sane default:
-          <ul>
-            <li>all modifiers are on homerow keys, nice and symmetricalc
-            <li>all layer-shifts are on thumb keys</li>
-          </ul>
-        </li>
-        <li><strong>2TK</strong>: two thumb keys.</li>
-      </ul>
+      <table>
+        <tr>
+          <th> EZ </th>
+          <td> <strong>No hold-taps.</strong>
+            <br> A beginner-friendly keymap for 42-key keebs.
+          </td>
+        </tr>
+        <tr>
+          <th> TT </th>
+          <td> <strong>Thumb-taps.</strong>
+            <br>Access the `Nav` layer with a long press on the <kbd>Space</kbd> key.
+            <br>Do <kbd>Backspace</kbd> and <kbd>Return</kbd> with a quick tap on thumb keys.
+          </td>
+        </tr>
+        <tr>
+          <th>HRM </th>
+          <td> <strong>Homerow-mods</strong>: the sane default.
+            <br>All modifiers are on homerow keys, nice and symmetrical.
+            <br>All layer-shifts are on thumb keys.
+          </td>
+        </tr>
+        <tr>
+          <th> 2TK </th>
+          <td> <strong>Two thumb keys.</strong>
+            <br>Because two good keys can be better than three. </td>
+        </tr>
+      </table>
       <p>These 4 modes share the same layers: only the thumb clusters change.</p>
+      <object hidden type="image/svg+xml" data="progression.svg" class="thumbs"></object>
 
       <h2>Hold-Taps That Just Work</h2>
       <p>Unreliable hold-taps are very frustrating. We believe Selenium fixes that.</p>
@@ -87,7 +95,7 @@
       <table>
         <tr>
           <td>
-            <svg viewBox="0 0 60 57" width="60" height="57">
+            <svg viewBox="0 0 60 57">
               <defs>
                 <path class="symbol" id="glyph_space"
                   transform="scale(0.4) translate(-24, -30)" d="M42,24V32H6V24"/>
@@ -109,7 +117,7 @@
         </tr>
         <tr>
           <td>
-            <svg viewBox="0 0 60 57" width="60" height="57">
+            <svg viewBox="0 0 60 57">
               <defs>
                 <path class="symbol" id="glyph_return"
                   transform="scale(0.4) translate(-24, -30)" d="M42,13V27H6 m8-8l-8,8l8,8"/>
@@ -131,7 +139,7 @@
         </tr>
         <tr>
           <td>
-            <svg viewBox="0 0 60 57" width="60" height="57">
+            <svg viewBox="0 0 60 57">
               <rect x="1" y="1" rx="4" ry="4" width="58" height="54.67"/>
               <rect class="colorSym sticky" y="1" rx="4" ry="4" width="29" height="54.67"/>
               <text class="colorSym sticky pc" x="-28.335" y="20">sym</text>

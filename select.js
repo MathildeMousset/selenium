@@ -15,6 +15,7 @@ const setConfig = () => {
   setLayout(data.layout.toLowerCase());
   svg.contentWindow.setConfig(data.mode, !!data.vim);
   svg.contentWindow.setGeometry(data.geometry);
+  document.querySelector("object.thumbs").contentWindow.setVim(!!data.vim);
 };
 
 svg.addEventListener("load", setConfig);

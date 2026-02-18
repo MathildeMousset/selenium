@@ -158,13 +158,19 @@ a[href]:hover {
 object { /* keymap */
   width: 100%;
 }
+.thumbs {
+  max-width: 26em;
+}
 
 table { /* behaviors */
   max-width: 42em;
   margin: auto;
 }
 td {
-  padding: 0.5em;
+  padding: 0.8em;
+}
+td svg {
+  width: 90px;
 }
 
 kbd { /* key */
