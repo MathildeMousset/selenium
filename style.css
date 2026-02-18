@@ -72,10 +72,6 @@ header {
   text-align: center;
 }
 
-form {
-  text-align: left;
-}
-
 form div {
   display: flex;
   flex-direction: row;
@@ -166,12 +162,28 @@ table { /* behaviors */
   max-width: 42em;
   margin: auto;
 }
-td {
+th, td {
   padding: 0.8em;
 }
 td svg {
   width: 90px;
 }
+td {
+  text-align: left;
+}
+
+
+#menu tr:hover {
+  background-color: var(--bg-accent);
+  cursor: pointer;
+}
+tr.selected th {
+  background-color: rgba(130, 156, 175, 0.4);
+}
+tr.selected td {
+  background-color: rgba(130, 156, 175, 0.2);
+}
+
 
 kbd { /* key */
   margin: 0 2px;

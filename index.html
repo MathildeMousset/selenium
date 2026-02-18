@@ -14,19 +14,25 @@
         variant for split keyboards.</p>
       <form>
         <div>
-          <select name="geometry">
-            <option value="ortho" selected>Ortho</option>
-            <option value="flex">Quacken</option>
-          </select>
-          <select name="layout">
-            <option>QWERTY</option>
-            <option>Colemak</option>
-            <option>Sturdy</option>
-            <option>Ergol</option>
-          </select>
+          <span>
+            <select name="geometry">
+              <option value="ortho" selected>Ortho</option>
+              <option value="flex">Quacken</option>
+            </select>
+            <select name="layout">
+              <option>QWERTY</option>
+              <option>Colemak</option>
+              <option>Sturdy</option>
+              <option>Ergol</option>
+            </select>
+          </span>
+          <span>
+            <label for="option-vim">Vim variant</label>
+            <input type="checkbox" name="vim" id="option-vim" value="vim">
+          </span>
         </div>
         <object type="image/svg+xml" data="keeb.svg" class="main"></object>
-        <div>
+        <div style="display: none;">
           <p>
             <input type="radio" name="mode" id="mode-ez" value="ez">
             <label for="mode-ez"><strong>EZ</strong>: no hold-taps</label>
@@ -40,45 +46,42 @@
             <input type="radio" name="mode" id="mode-2tk" value="2tk">
             <label for="mode-2tk"><strong>2TK</strong>: two thumb keys</label>
           </p>
-          <p>
-            <label for="option-vim">Vim variant</label>
-            <input type="checkbox" name="vim" id="option-vim" value="vim">
-          </p>
         </div>
+        <table id="menu">
+          <tr id="menu-ez">
+            <th> EZ </th>
+            <td> <strong>No hold-taps.</strong>
+              <br> A beginner-friendly keymap for 42-key keebs.
+            </td>
+          </tr>
+          <tr id="menu-tt">
+            <th> TT </th>
+            <td> <strong>Thumb-taps</strong>: learning the trick.
+              <br>Access the `Nav` layer with a long press on the <kbd>Space</kbd> key.
+              <br>Do <kbd>Backspace</kbd> and <kbd>Return</kbd> with a quick tap on thumb keys.
+            </td>
+          </tr>
+          <tr id="menu-hrm" class="selected">
+            <th> HRM </th>
+            <td> <strong>Homerow-mods</strong>: the sane default.
+              <br>All keyboard shortcuts on the homerow, nice and symmetrical.
+              <br><kbd>Shift</kbd>, layer-shifts and special keys on the thumbs.
+            </td>
+          </tr>
+          <tr id="menu-2tk">
+            <th> 2TK </th>
+            <td> <strong>Two thumb keys.</strong>
+              <br>Because two good keys can be better than three. </td>
+          </tr>
+        </table>
       </form>
     </header>
 
     <main>
       <h2>From 42 to 34 Keys (and beyond)</h2>
-      <p>Like Arsenik, Selenium allows a step-by-step approach:</p>
-      <table>
-        <tr>
-          <th> EZ </th>
-          <td> <strong>No hold-taps.</strong>
-            <br> A beginner-friendly keymap for 42-key keebs.
-          </td>
-        </tr>
-        <tr>
-          <th> TT </th>
-          <td> <strong>Thumb-taps.</strong>
-            <br>Access the `Nav` layer with a long press on the <kbd>Space</kbd> key.
-            <br>Do <kbd>Backspace</kbd> and <kbd>Return</kbd> with a quick tap on thumb keys.
-          </td>
-        </tr>
-        <tr>
-          <th>HRM </th>
-          <td> <strong>Homerow-mods</strong>: the sane default.
-            <br>All modifiers are on homerow keys, nice and symmetrical.
-            <br>All layer-shifts are on thumb keys.
-          </td>
-        </tr>
-        <tr>
-          <th> 2TK </th>
-          <td> <strong>Two thumb keys.</strong>
-            <br>Because two good keys can be better than three. </td>
-        </tr>
-      </table>
-      <p>These 4 modes share the same layers: only the thumb clusters change.</p>
+      TODO
+      <!-- <p>Like Arsenik, Selenium allows a step-by-step approach:</p> -->
+      <!-- <p>These 4 modes share the same layers: only the thumb clusters change.</p> -->
       <object hidden type="image/svg+xml" data="progression.svg" class="thumbs"></object>
 
       <h2>Hold-Taps That Just Work</h2>
@@ -134,7 +137,8 @@
             <strong>Hold-Preferred</strong>:<br>
             behaves as a modifier / layer-shift by default, becomes an input when pressed and
             released in less than 150ms.<br>
-            Perfect for adding a modifier to <kbd>Enter</kbd>, <kbd>Backspace</kbd>, <kbd>Tab</kbd>, <kbd>Esc</kbd>…
+            Perfect for adding actions like <kbd>Enter</kbd>, <kbd>Backspace</kbd>, <kbd>Tab</kbd>,
+            <kbd>Esc</kbd> to any thumb modifier / layer-shift.
           </td>
         </tr>
         <tr>

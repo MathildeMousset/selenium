@@ -2,6 +2,8 @@ const cfg = document.forms[0];
 const obj = document.querySelectorAll("object");
 const svg = obj[0]; // main keyboard display
 
+const selected = () => document.querySelector("#menu .selected");
+
 async function setLayout(name) {
   const response = await fetch(`layouts/${name}.json`);
   const result   = await response.json();
@@ -11,6 +13,7 @@ async function setLayout(name) {
 }
 
 const setConfig = () => {
+  const mode = selected().id.substr(5);
   const data = Object.fromEntries(new FormData(cfg));
   setLayout(data.layout.toLowerCase());
   svg.contentWindow.setConfig(data.mode, !!data.vim);
@@ -33,3 +36,14 @@ init("sym", "", "sym");
 init("nav", "nav", "");
 init("fun", "fun", "");
 init("vim", "vim", "num");
+
+// menu
+document.querySelectorAll("#menu tr").forEach((tr) => {
+  tr.addEventListener("click", (event) => {
+    const mode = tr.id.substr(5);
+    const data = Object.fromEntries(new FormData(cfg));
+    svg.contentWindow.setConfig(mode, !!data.vim);
+    selected().classList.remove("selected");
+    tr.classList.add("selected");
+  });
+});
