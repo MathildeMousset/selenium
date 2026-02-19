@@ -158,6 +158,12 @@ object { /* keymap */
   max-width: 26em;
 }
 
+svg {
+  display: block;
+  margin: auto;
+  height: 60px;
+}
+
 table { /* behaviors */
   max-width: 42em;
   margin: auto;
@@ -166,7 +172,7 @@ th, td {
   padding: 0.8em;
 }
 td svg {
-  width: 90px;
+  height: 80px;
 }
 td {
   text-align: left;
@@ -183,6 +189,16 @@ tr.selected th {
 tr.selected td {
   background-color: rgba(130, 156, 175, 0.2);
 }
+
+#dtk .left,  #vim-dtk .left  { transform: translate(30px, 0px); }
+#dtk .right, #vim-dtk .right { transform: translate(-30px, 0px); }
+
+.left  .tucked { transform: translate(  0px, 10px); }
+.left  .comfy  { transform: translate( 64px, 10px); }
+.left  .reachy { transform: translate(128px, 10px); }
+.right .reachy { transform: translate(220px, 10px); }
+.right .comfy  { transform: translate(284px, 10px); }
+.right .tucked { transform: translate(348px, 10px); }
 
 
 kbd { /* key */

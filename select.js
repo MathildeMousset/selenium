@@ -4,6 +4,9 @@ const svg = obj[0]; // main keyboard display
 
 const selected = () => document.querySelector("#menu .selected");
 
+drawKeys();
+drawLabels();
+
 async function setLayout(name) {
   const response = await fetch(`layouts/${name}.json`);
   const result   = await response.json();
@@ -12,7 +15,7 @@ async function setLayout(name) {
   });
 }
 
-const setConfig = () => {
+const applyConfig = () => {
   const mode = selected().id.substr(5);
   const data = Object.fromEntries(new FormData(cfg));
   setLayout(data.layout.toLowerCase());
@@ -21,8 +24,8 @@ const setConfig = () => {
   document.querySelector("object.thumbs").contentWindow.setVim(!!data.vim);
 };
 
-svg.addEventListener("load", setConfig);
-cfg.addEventListener("change", setConfig);
+svg.addEventListener("load", applyConfig);
+cfg.addEventListener("change", applyConfig);
 
 // layer views
 const init = (name, layer3, layer4) => {
