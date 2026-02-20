@@ -22,12 +22,10 @@
 .qmx #right { transform: translate(970px, 0px); }
 
 /* Generic ortholinear view */
-.ortho #right { transform: translate(870px, 0px); }
+.none  #right,
+.ortho #right { transform: translate(810px, 0px); }
+.none  .col6,
 .ortho .col6 { display: none; }
-
-/* Generic layer view */
-.none #right { transform: translate(810px, 0px); }
-.none .col6,
 .none .thumbCluster { display: none !important; }
 
 .board {
@@ -213,7 +211,9 @@ text.colorMod  { fill: var(--key-label); }
 rect.colorMod  { fill: var(--key-special); }
 
 /* Symbol layer */
+rect.borderSym,
 use.layerSym { stroke: var(--layer-sym-fg); }
+text.borderSym,
 text.layerSym  { fill: var(--layer-sym-fg); }
 text.colorSym  { fill: var(--shift-sym-fg); }
 rect.colorSym  { fill: var(--shift-sym-bg); }

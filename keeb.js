@@ -30,9 +30,9 @@ const keyboards = {
     view_box: "45 -12 940 340",
   },
   ortho: {
-    thumb_spread: [ -0.5, 0, 0 ],
+    thumb_spread: [ -1, 0, 0 ],
     thumb_stagger: [ -0.2, 0, 0 ],
-    view_box: "100 -10 730 260",
+    view_box: "100 -10 670 260",
   },
   none: {
     view_box: "100 0 670 180",

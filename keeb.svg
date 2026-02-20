@@ -7,7 +7,7 @@
       <path id="flex-half" d="m0 42 q-51 28-131 10 v-68 q86 0 112 -35 l19 15z"/>
       <use href="#flex-half" transform="scale(-1 1)"/>
     </g>
-    <path class="ortho board" d="M100-10 h730 v260 h-730z M465-10 v260"/>
+    <path class="ortho board" d="M100-10 h730 v260 h-730z M435-10 v260"/>
   </g>
 
   <defs>
@@ -277,30 +277,34 @@
     <!-- two thumb keys + Emacs -->
     <g class="leftThumb"  id="leftThumb-2tk">
       <g class="tucked thumb">
-        <g class="key">
-          <rect/>
-          <rect class="holdTap colorMod"/>
-          <text class="level1 colorMod pc">shift</text>
-          <use  class="level2"   href="#glyph_tab"/>
-          <use  class="layerNav" href="#glyph_btab"/>
-          <use  class="layerSym" href="#glyph_caps"/>
-        </g>
         <g class="comfy thumb">
-          <use href="#leftThumb-hrm-comfy"/>
+          <g class="key">
+            <rect/>
+            <rect class="holdTap colorMod"/>
+            <text class="level1 colorMod pc">shift</text>
+            <use  class="level2"   href="#glyph_tab"/>
+            <use  class="layerNav" href="#glyph_btab"/>
+            <use  class="layerSym" href="#glyph_caps"/>
+          </g>
+          <g class="reachy thumb">
+            <use href="#leftThumb-hrm-comfy"/>
+          </g>
         </g>
       </g>
     </g>
     <g class="rightThumb" id="rightThumb-2tk">
       <g class="tucked thumb">
-        <g class="key showSym">
-          <rect/>
-          <rect class="holdTap colorSym"/>
-          <text class="level1  colorSym pc">sym</text>
-          <use  class="level2" href="#glyph_return"/>
-          <text class="layerNav shortcut">altgr</text>
-        </g>
         <g class="comfy thumb">
-          <use href="#rightThumb-tt-comfy"/>
+          <g class="key showSym">
+            <rect/>
+            <rect class="holdTap colorSym"/>
+            <text class="level1  colorSym pc">sym</text>
+            <use  class="level2" href="#glyph_return"/>
+            <text class="layerNav shortcut">altgr</text>
+          </g>
+          <g class="reachy thumb">
+            <use href="#rightThumb-tt-comfy"/>
+          </g>
         </g>
       </g>
     </g>
