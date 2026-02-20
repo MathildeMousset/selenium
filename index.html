@@ -95,7 +95,7 @@
       <h2 id="hold-taps">Hold-Taps That Just Work</h2>
       <p>Unreliable hold-taps are very frustrating. We believe Selenium fixes that.</p>
 
-      <h3>Timing is Key</h3>
+      <h3 id="timing-is-key">Timing is Key</h3>
       <p>The common approach for compact keyboard keymaps is to use a single behavior for all hold-taps,
         which is often a compromise between “tap-preferred” and “hold-preferred” (like QMK’s
         “permissive hold”), and then rely on mitigating measures and fine timing adjustments to limit
@@ -160,25 +160,42 @@
         proper behavior/key associations, it just works. No unwanted shortcuts while typing text, no
         accidental <kbd>Return</kbd> while chatting.</p>
 
-      <h3>Thumb-Shifting</h3>
-      <p>Another opiniated choice with Selenium is that the <kbd>Shift</kbd> and <kbd>Symbols</kbd> keys
-        belong to the thumbs, <em>not</em> to the homerow:</p>
+      <h3 id="thumb-shifting">Thumb-Shifting</h3>
+      <p>Another opiniated choice with Selenium is that the <kbd>Shift</kbd> and <kbd>Symbols</kbd>
+        keys belong to the thumbs, <em>not</em> to the homerow:</p>
       <ul>
         <li>this makes it much easier to chain several uppercase letters or symbols;</li>
         <li>these keys must have “hold-preferred” priority, which is not suitable for homerow-mods.</li>
       </ul>
+      <p>Having <kbd>Shift</kbd> as a homerow-mod is a very common reason why HRMs as a whole can be
+        so difficult to tune right: capitalizing a word while typing text requires <kbd>Shift</kbd>
+        to have an immediate action, which is exactly what you <em>do NOT</em> want for keyboard
+        shortcuts. The problem can be partially mitigated with complex settings and practice, but it
+        always ends up showing up at higher typing speeds.</p>
+      <p>By using a thumb key with hold-preferred priority for <kbd>Shift</kbd>, we can use a very
+        long tapping-term on homerow-mods (300 ms by default), and ensure they’re never misfired. </p>
       <p> It might take a bit to get used to <kbd>Shift</kbd> under the left thumb, but it’s totally
-        worth it. Probably the biggest comfort improvement you can expect on a keyboard.  </p>
-      <p>For keyboards with three good keys per thumb, Selenium sets sticky <kbd>Shift</kbd> and
-        <kbd>Symbols</kbd> keys under the thumbs. These keys behave as one-time-shift by default,
-        which gives additional safety to capitalize only the first letter of a word. The faster you
-        type, the more you’ll see the benefits of such details.</p>
+        worth it — even without these timing considerations. Probably the biggest comfort improvement
+        you can expect on a keyboard. </p>
+
+      <h3 id="one-time-shift">One-Time-Shift</h3>
+      <p>In its recommended flavor, Selenium sets sticky <kbd>Shift</kbd> and <kbd>Symbols</kbd>
+        keys under the thumbs: modifiers when held, dead keys when tapped. The trick is, <em>these
+        keys behave as one-time-shift by default</em>, which gives additional safety to capitalize
+        only the first letter of a word. The faster you type, the more you’ll see the benefits of
+        such details.</p>
+      <p> Even without speed-typing, using <kbd>Shift</kbd> and <kbd>Symbols</kbd> as dead keys is
+        an incredible improvement over regular modifiers. This won’t get in the way if you don’t
+        use it, but you definitely should try <em>rolling</em> these thumb keys rather than
+        <em>chording</em> them: that’s the kind of comfort improvement you don’t want to miss. </p>
+      <p>In our opinion, these sticky keys are the main reason why you should have a keyboard with
+        three good keys per thumb. Otherwise, 34 keys would be just fine.</p>
 
       <h2 id="flavors">From 42 to 34 Keys (and beyond)</h2>
       <p>Selenium is available in 4 different <em>flavors</em>: pick the HRM flavor right away,
         or start with EZ or TT to ease the learning process if you’re unsure.</p>
 
-      <h3>EZ: No Hold-Taps</h3>
+      <h3 id="flavor-ez">EZ: No Hold-Taps</h3>
       <svg viewBox="0 10 410 57">
         <g class="left" id="ez-left">
           <g class="tucked specialKey">
@@ -223,7 +240,7 @@
       <p> Special keys like <kbd>Shift</kbd>, <kbd>Enter</kbd>, <kbd>Backspace</kbd> or
         <kbd>Tab</kbd> remain on lateral columns, like on standard ANSI/ISO keyboards. </p>
 
-      <h3>TT: Thumb-Taps</h3>
+      <h3 id="flavor-tt">TT: Thumb-Taps</h3>
       <svg viewBox="0 10 410 57">
         <g class="left">
           <g id="tt-left-tucked" class="tucked">
@@ -285,7 +302,7 @@
         <kbd>Tab</kbd>/<kbd>Enter</kbd>.
       </p>
 
-      <h3>HRM: Home-Row Mods</h3>
+      <h3 id="flavor-hrm">HRM: Home-Row Mods</h3>
       <svg viewBox="0 10 410 57">
         <g class="left">
           <use href="#tt-left-tucked" class="tucked"/>
@@ -333,7 +350,7 @@
       </ul>
       <p> This flavor quickly feels like the most natural way to use a keyboard. </p>
 
-      <h3>2TK: Two Thumb Keys</h3>
+      <h3 id="flavor-2tk">2TK: Two Thumb Keys</h3>
       <svg viewBox="0 10 410 57">
         <g class="left">
           <g class="comfy key">
@@ -365,7 +382,8 @@
         <li> <kbd>Shift</kbd> and <kbd>Sym</kbd> become hold-preferred. </li>
       </ul>
       <p> FTR: Selenium started as a 34-key configuration, and the name is a reference to the 34th
-        element of the periodic table. This flavor used to be the default one. ;-) </p>
+        element of the periodic table. This flavor used to be the default one — and would still be
+        if sticky keys weren’t such a banger. ;-) </p>
 
       <h2 id="layers">Layers</h2>
 
